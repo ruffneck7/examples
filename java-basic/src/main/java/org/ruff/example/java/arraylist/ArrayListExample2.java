@@ -20,21 +20,6 @@ public class ArrayListExample2 {
 		
 		System.out.println(list);
 		
-		class TestObect {
-			
-			private String name;
-			
-			public TestObect(String name) {
-				this.name = name;
-			}
-			
-			@Override
-			public String toString() {
-				return "TestObect [name=" + name + "]";
-			}
-		}
-		
-		
 		TestObect to1 = new TestObect("Test1");
 		TestObect to2 = new TestObect("Test2");
 		TestObect to3 = new TestObect("Test3");
@@ -52,5 +37,19 @@ public class ArrayListExample2 {
 		
 		// The remove method removes the first matched one 
 		System.out.println(list2);
+	}
+}
+
+class TestObect {
+	
+	private String name;
+	
+	public TestObect(String name) {
+		this.name = name;
+	}
+	
+	@Override
+	public String toString() {
+		return "TestObect [name=" + name + "]";
 	}
 }
